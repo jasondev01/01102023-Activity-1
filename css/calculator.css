@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body, p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color: rgb(180, 180, 180);
+}
+
+.content {
+    max-width: 1100px;
+    /* height: 825px; */
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content .description {
+    padding-right: 25px;
+}
+
+.bi {
+    cursor: pointer;
+    font-size: 25px;
+    color: black;
+    margin-right: 10px;
+}
+
+.bi:hover {
+    color: rgb(255, 79, 108);
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    grid-template-columns: repeat(4, 67px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 67px);
+    margin: 50px;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: #000;
+    box-shadow: -10px 12px 53px -19px rgba(0,0,0,0.66);
+    -webkit-box-shadow: -10px 12px 53px -19px rgba(0,0,0,0.66);
+    -moz-box-shadow: -10px 12px 53px -19px rgba(0,0,0,0.66);
+}
+
+.calculator button {
+    cursor: pointer;
+    font-size: 22px;
+    outline: none;
+    background-color: #292929;
+    border: 1px solid rgb(54, 54, 54);
+    color: #fff;
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    transition: all .1s ease-in-out;
+    margin: auto;
+}
+
+.calculator button:hover {
+    background-color: #000;
+
+}
+
+.calculator .operands {
+    color: lightpink;
+}
+
+.calculator .operands:hover {
+    background-color: #ff8095;
+    color: #000;
+
+}
+
+.calculator .equals {
+    background-color: lightpink;
+    color: #000;
+    grid-row: -3 / span 2;
+    grid-column: -2 ;
+    height:  90%!important;
+    border-radius: 50px!important;
+}
+.calculator .equals:hover {
+    background-color: #ff8095;
+    color: #000000;
+}
+
+.calculator .del {
+    color: rgb(238, 102, 102)
+}
+
+.calculator .all-clear {
+    color: red;
+    background-color: #502929;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: #000;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border: 1px solid rgb(44, 40, 41);
+    height: 100px;
+    border-radius: 30px;
+}
+
+.output .output-value {
+    color: #fff;
+    font-size: 35px;
+}
+
+.span-two {
+    grid-column: span 2;
+    width: 90%!important;
+    border-radius: 50px!important;
+}
