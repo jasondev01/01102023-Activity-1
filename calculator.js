@@ -93,7 +93,7 @@ equals.addEventListener(
         const rightNumber = parseFloat( right.join('') ); // ('') separator is important if not it will have comma
         const operator = operation[operatorIndex]; // get the operator = (-)
 
-        if ( right.length === 0 || !operator) {
+        if ( !left.length|| !right.length|| !operator ) {
             return;
         } else {
             switch( operator ) {

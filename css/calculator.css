@@ -17,10 +17,18 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
 }
 
 .content .description {
-    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-content: center;
+}
+
+.content .description h3 {
+    font-size: 3rem;
 }
 
 .bi {
