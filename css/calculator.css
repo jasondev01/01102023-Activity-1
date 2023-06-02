@@ -11,24 +11,27 @@ body {
 }
 
 .content {
-    max-width: 1100px;
+    width: 86%;
     height: 100vh;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 .content .description {
+    text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
-    align-content: center;
+    position: absolute;
+    top: 2rem;
 }
 
 .content .description h3 {
     font-size: 3rem;
+    margin: 1.2rem 0;
 }
 
 .bi {
@@ -58,6 +61,8 @@ body {
     border-radius: 30px;
     background-color: #000;
     box-shadow: -10px 12px 53px -19px rgba(0,0,0,0.66);
+    position: absolute;
+    bottom: 8rem;
 }
 
 .calculator input {
@@ -136,4 +141,11 @@ body {
     grid-column: span 2;
     width: 90%!important;
     border-radius: 50px!important;
+}
+
+/*====== MEDIA QUERIES (SMALL DEVICES) ====*/
+@media screen and (max-width: 800px) {
+    .content .description h3 {
+        font-size: 2rem;
+    }
 }
