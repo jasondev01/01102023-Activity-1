@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body, p{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -12,7 +12,6 @@ body, p{
 
 .content {
     max-width: 1100px;
-    /* height: 825px; */
     height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -29,11 +28,15 @@ body, p{
     font-size: 25px;
     color: black;
     margin-right: 10px;
+    transition: all 0.4s;
 }
 
 .bi:hover {
     color: rgb(255, 79, 108);
 }
+
+
+/* ===== CALCULATOR =====*/
 
 .calculator {
     display: grid;
@@ -47,11 +50,9 @@ body, p{
     border-radius: 30px;
     background-color: #000;
     box-shadow: -10px 12px 53px -19px rgba(0,0,0,0.66);
-    -webkit-box-shadow: -10px 12px 53px -19px rgba(0,0,0,0.66);
-    -moz-box-shadow: -10px 12px 53px -19px rgba(0,0,0,0.66);
 }
 
-.calculator button {
+.calculator input {
     cursor: pointer;
     font-size: 22px;
     outline: none;
@@ -65,16 +66,16 @@ body, p{
     margin: auto;
 }
 
-.calculator button:hover {
+.calculator input:hover {
     background-color: #000;
 
 }
 
-.calculator .operands {
+.calculator .operators {
     color: lightpink;
 }
 
-.calculator .operands:hover {
+.calculator .operators:hover {
     background-color: #ff8095;
     color: #000;
 
@@ -88,18 +89,19 @@ body, p{
     height:  90%!important;
     border-radius: 50px!important;
 }
+
 .calculator .equals:hover {
     background-color: #ff8095;
     color: #000000;
 }
 
-.calculator .del {
-    color: rgb(238, 102, 102)
-}
-
-.calculator .all-clear {
+.calculator .clear {
     color: red;
     background-color: #502929;
+}
+
+.calculator .del {
+    color: rgb(238, 102, 102);
 }
 
 .output {
